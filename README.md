@@ -16,3 +16,4 @@ Sentiment Analysis - Twitter_Deep_Learning_Predicting_20200426.ipynb is the pred
 
 autotrader1_spider.py is the program used to gather data from Auto Trader
 
+glassdoor_spider.py is the program used to gather data from glassdoor
