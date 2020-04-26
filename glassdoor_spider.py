@@ -13,7 +13,6 @@ class glasdoorSpider(scrapy.Spider):
       
     start_urls = []
     start_urls.append(start_url)
-#    start_urls = ["https://www.glassdoor.co.uk/Reviews/Allianz-Global-Investors-Reviews-E39250.htm"]
 
     def parse(self,response):
         item = GlassdoorItem()
