@@ -24,3 +24,4 @@ Sentiment Analysis - glassdoor_Predicting_20200426.ipynb is the prediction code 
 
 Rightmove 202002.ipynb is the program that analysis the data taken from the Rightmove website and creates a powerpoint presentation.
 
+Sentiment Analysis - Earnings Commentary_20200427.ipynb is the program used to analyse the sentiment of company earnings calls, the output is a chart in a powerpoint presentation.
