@@ -11,9 +11,6 @@ class Autotrader1Spider(scrapy.Spider):
 
     start_urls = ["http://www.autotrader.co.uk/car-dealers/search?channel=cars&postcode=M4+3AQ&radius=1501&forSale=on&toOrder=on&page=1"]
 
-##    start_urls = ["https://www.autotrader.co.uk/json/dealers/stock?advertising-location=at_cars&advertising-location=at_profile_cars&dealer=637441&onesearchad=Used&onesearchad=Nearly%20New&onesearchad=New&page=1&sort=price-asc"]
-##    start_urls = ["https://www.autotrader.co.uk/json/dealers/stock?advertising-location=at_cars&advertising-location=at_profile_cars&dealer=2550&onesearchad=Used&onesearchad=Nearly%20New&onesearchad=New&page=1&sort=price-asc"]
-
     def parse(self,response):
         print("STARTING NOW")
         for href in response.xpath('//*[@class="dealerList__itemName"]/a[@class="dealerList__itemUrl tracking-standard-link"]/@href'):
@@ -38,7 +35,6 @@ class Autotrader1Spider(scrapy.Spider):
                     text_to_search.append(sel.xpath('.//text()').re(r'(?="advertType":")(.*?)(?<="isNationalStockAdvert":)')[i])
                     item = Autotrader1Item()
                     item['name'] = re.findall('(?<="name":")(.*?)(?=")',text_to_search[i])
-##                    item['address'] = scrapy.Field()'] 
                     item['dealer_url'] = re.findall('(?<="url":")(.*?)(?=")',text_to_search[i])
                     item['cars'] = sel.xpath('.//text()').re(r'(?<="totalResults":)(.*?)(?=,)')
                     item['dealerReviewValue'] = re.findall('(?<="dealerReviewValue":)(.*?)(?=,)',text_to_search[i])
@@ -70,7 +66,6 @@ class Autotrader1Spider(scrapy.Spider):
                     item['fixedRateInterest'] = re.findall('(?<="fixedRateInterest":")(.*?)(?=")',text_to_search[i])                    
                     item['finalPayment'] = re.findall('(?<="finalPayment":")(.*?)(?=")',text_to_search[i])                    
                     item['optionToPurchaseFee'] = re.findall('(?<="optionToPurchaseFee":")(.*?)(?=")',text_to_search[i])                    
-##                    item['isNationalStockAdvert'] = scrapy.Field()'] 
                     yield item
 
                 except IndexError:
