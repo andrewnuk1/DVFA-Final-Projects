@@ -20,5 +20,7 @@ Auto Trader 202002.ipynb is the program used to analyst the Auto Trader data and
 
 glassdoor_spider.py is the program used to gather data from glassdoor
 
-Sentiment Analysis - glassdoor_Predicting_20200426.ipynb is the prediction code for the glassdoor posts gathered using Vadar Sentiment Analysis
+Sentiment Analysis - glassdoor_Predicting_20200426.ipynb is the prediction code for the glassdoor posts gathered using Vadar Sentiment Analysis, output is charts in a powerpoint presentation
+
+Rightmove 202002.ipynb is the program that analysis the data taken from the Rightmove website and creates a powerpoint presentation.
 
