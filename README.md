@@ -5,8 +5,8 @@ This repository holds all the code i used in the final project course for the DV
 
 
 **Project 1:**
-autotrader1_spider.py is the program used to gather data from Auto Trader
-Auto Trader 202002.ipynb is the program used to analyst the Auto Trader data and create the power point presentation
+- 'autotrader1_spider.py' is the program used to gather data from Auto Trader
+- 'Auto Trader 202002.ipynb' is the program used to analyst the Auto Trader data and create the power point presentation
 
 **Project 2:**
 - 'Rightmove 202002.ipynb' is the program that analysis the data taken from the Rightmove website and creates a powerpoint presentation.
