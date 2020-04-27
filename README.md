@@ -1,7 +1,7 @@
 # DVFA-Final-Projects
 Home for the project code for the DVFA course
 
-This repository holds all the code i used in the final project course for the DVFA
+This repository holds all the code i used in the final project course for the DVFA, all Python though some Jupyter Notebook format
 
 
 'twitter201906_python3.py' is the program used to gather tweets
